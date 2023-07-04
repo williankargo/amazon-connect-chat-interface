@@ -38,6 +38,14 @@ via the [getting started process](https://github.com/amazon-connect/amazon-conne
 To make local modifications to this package and test them on your webpage, simply make your edits and run `npm install && npm run dev-build` to produce the
 Webpack built file and the sourcemaps. You can import these in the same fashion as the getting started examples.
 
+### Storybook Setup
+ 
+Run storybook on localhost and view documentation for each component.
+ 
+```
+$ npm run storybook
+```
+
 ### Production
 To build the production version of this package, simply run `npm install && npm run build`. These will generate a minified built file, with console logs stripped and other Webpack optimizations.
 Import this into your package as is described in the GitHub examples.

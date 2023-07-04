@@ -19,6 +19,7 @@ export default class ThemeProvider extends Component {
 
   render() {
     const { theme, children } = this.props;
+
     return (
       <StyledThemeProvider theme={theme}>
         {children}

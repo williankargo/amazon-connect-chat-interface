@@ -5,8 +5,14 @@ import React from 'react';
 import PT from 'prop-types';
 import styled from 'styled-components';
 import { default_image } from 'connect-images';
-import { SpriteSymbol } from 'connect-prop-types';
 import { FlexVerticalCenterContainer } from 'connect-theme/Helpers';
+
+export const SpriteSymbol = PT.oneOfType([PT.element, PT.func, PT.shape({
+  id: PT.string.isRequired,
+  viewBox: PT.string.isRequired,
+  url: PT.string.isRequired,
+  toString: PT.func.isRequired
+})]);
 
 const SVGComponent = function({ src, alt }) {
   const svgConfig = {
